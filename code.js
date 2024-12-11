@@ -1,6 +1,7 @@
 let pathCache = {};
 
 function tsp_hk(distance_matrix) {
+    pathCache = {}
     const n = distance_matrix.length;
     const visited_all = (1 << n) - 1; 
     function tsp(city, mask) {
